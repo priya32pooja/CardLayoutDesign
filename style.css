@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/*for card section*/
+.training{
+    width: 100%;
+    height: 850px;
+    background: url("images/background.jpg") center;
+    background-size: cover;
+}
+.training h1{
+    text-align: center;
+    padding: 30px 0px;
+    margin-bottom: 80px;
+    color: brown;
+}
+.container{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.training-items{
+    flex-basis: 23%;
+    margin: 10px 0px;
+    padding: 20px 0px;
+    text-align: center;
+    background: wheat;
+    box-shadow: 0px 0px 10px 3px gray;
+    border-radius: 15px;
+}
+/* for image*/
+.training-items img{
+    width: 60px;
+    height: 60px;
+}
+.training-items h3{
+    padding: 10px 0;
+}
+.training-items p{
+    font-size: 16px;
+    padding: 10px;
+}
+.training-items button{
+    background: brown;
+    color: whitesmoke;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 10px;
+}
+.training-items:hover{
+    background: gray;
+}
+.training-items:hover p{
+    background: whitesmoke;
+}
+.training-items:hover button{
+    color: brown;
+    background: whitesmoke;
+}
+/*media query for responsive*/
+@media only screen and (min-width: 200px) and (max-width: 860px) {
+    .container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .training-items{
+        margin: 10px;
+    }
+}
